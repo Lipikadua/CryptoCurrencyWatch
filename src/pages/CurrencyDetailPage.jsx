@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import HistoryChart from "../components/HistoryChart";
 import CurrencyDetail from "../components/CurrencyDetail";
@@ -71,7 +72,10 @@ const CurrencyDetailPage = () => {
       return <div> wait for while....</div>;
     } else {
       return (
-        <>
+        <Fragment>
+          <Helmet>
+            <title> Crypto-Details</title>
+          </Helmet>
           <DetailsCurrencyButton
             setCurrencyName={setCurrencyName}
             setCurrencySymbol={setCurrencySymbol}
@@ -96,7 +100,7 @@ const CurrencyDetailPage = () => {
               exchangeRate={exchangeRate}
             />
           </div>
-        </>
+        </Fragment>
       );
     }
   };

@@ -41,7 +41,7 @@ const HomePage = () => {
   return (
     <Fragment>
       <Helmet>
-        <title> Cryptowatch</title>
+        <title> Crypto-DashBoard</title>
       </Helmet>
 
       <HomeCurrencyButton

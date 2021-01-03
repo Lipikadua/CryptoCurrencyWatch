@@ -1,0 +1,46 @@
+.symbol-container {
+  padding: 2px;
+  margin: 2px;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-name: symbol;
+  animation-duration: 60s;
+}
+.nav {
+  justify-content: left;
+  background-color: hsl(58deg 79% 51%);
+  width: auto;
+  height: 11vh;
+  padding: 1px 1px 1px 1px;
+  margin: 2px auto 4px;
+}
+
+@keyframes symbol {
+  0% {
+    left: 1px;
+    top: 0px;
+  }
+  25% {
+    left: 600px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+  75% {
+    left: 600px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions img {
+    width: 100% !important;
+    height: 150% !important;
+  }
+}

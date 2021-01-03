@@ -1,0 +1,92 @@
+#header {
+  background-color: hsla(192, 42%, 52%, 0.678);
+  padding: 1px 1px 1px 1px;
+  margin: 2px auto 2px;
+}
+
+.cryptList {
+  display: flex;
+  justify-content: space-between;
+  font-family: cursive;
+  font-size: larger;
+  font-weight: bold;
+  padding: 2px 3px 5px 3px;
+  margin: 3px 2px 1px 2px;
+
+  background-color: rgba(243, 226, 204, 0.658);
+}
+
+#home {
+  background-image: url("./assets/background.jpg");
+  background-position: center;
+  border-radius: 2%;
+}
+.cryptoList {
+  border-radius: 2%;
+  box-shadow: 1px 1px 5px rgb(105, 107, 89);
+}
+
+.cryptoList div:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 8px rgba(129, 151, 99, 0.589);
+}
+.cryptoList h2 {
+  display: flex;
+  font-display: bold;
+}
+.coinlist-image {
+  width: 50px;
+}
+
+.coinlist-item {
+  display: flex;
+}
+.pagination {
+  margin-top: 10px;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+}
+
+.display-inlineb {
+  justify-content: right;
+}
+
+.dropdown-item-list {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  overflow: scroll;
+  height: 200px;
+  transform: translate(1px, 40px);
+  scroll-padding-inline: initial;
+  padding-right: inherit;
+}
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(1deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+@media (max-width: 768px) {
+  .instructions img {
+    width: 100% !important;
+    height: 150% !important;
+  }
+}

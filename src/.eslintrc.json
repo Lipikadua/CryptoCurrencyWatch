@@ -1,0 +1,63 @@
+
+{
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "es6" : true,
+      "node": true
+    },
+    "extends": [
+      "react-app"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react"
+    ],
+    "ignorePatterns": [
+      "serviceWorker.js"
+    ],
+    "rules": {
+      "react/prop-types": 0,
+        "react/no-typos": 0, 
+      
+      "eqeqeq": "off",
+      "curly": "error",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "import/no-named-as-default": 0,
+      "react/jsx-one-expression-per-line": "off",
+      "jsx-a11y/label-has-for": [
+        2,
+        {
+          "required": {
+            "some": [
+              "nesting",
+              "id"
+            ]
+          }
+        }
+      ],
+      "camelcase": [
+        "error",
+        {}
+      ],
+      "react/jsx-props-no-spreading": "off"
+    }
+  }
